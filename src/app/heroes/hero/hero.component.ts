@@ -1,3 +1,4 @@
+import { reset } from './../../../../node_modules/@colors/colors/index.d';
 import { Component } from '@angular/core';
 
 @Component({
@@ -24,6 +25,11 @@ export class HeroComponent {
 
   changeHeroAge(): void {
     this.age = 25;
+  }
+
+  resetHero(): void {
+    this.name = 'ironman';
+    this.age = 45;
   }
 
 }
