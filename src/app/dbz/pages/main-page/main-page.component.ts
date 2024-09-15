@@ -24,8 +24,11 @@ export class MainPageComponent {
   ];
 
   onNewCharacter(character: Character): void {
-    console.log('MainPageComponent.onNewCharacter', character);
     this.characters.push(character);
+  }
+
+  onDeleteCharacter(index: number): void {
+    this.characters.splice(index, 1);
   }
 
 }
